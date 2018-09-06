@@ -6,12 +6,7 @@ class Shoe
   
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-  end
-
-  def genre=(genre)
-    @genre = genre
-    GENRES << genre
+    BRANDS << brand.unique
   end
 
   def brand
