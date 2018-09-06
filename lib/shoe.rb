@@ -6,6 +6,14 @@ class Shoe
     @brand = brand
   end
 
+  def genre=(genre)
+    @genre = genre
+    GENRES << genre
+  end
+
+  def brand
+    @brand
+  end
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
